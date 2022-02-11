@@ -9,4 +9,6 @@
 (library
  (name eml)
  (modules eml)
+ ; Quick fix for 5.00
+ (libraries camlp-streams)
  (instrumentation (backend bisect_ppx)))
